@@ -99,9 +99,9 @@ const nav = document.getElementById('nav');
 const hamburger = document.getElementById('nav-hamburger');
 const mobileMenu = document.getElementById('mobile-menu');
 
-// Scroll state
+// Scroll state — solid nav kicks in early for logo visibility
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 80) {
+  if (window.scrollY > 40) {
     nav.classList.add('scrolled');
   } else {
     nav.classList.remove('scrolled');

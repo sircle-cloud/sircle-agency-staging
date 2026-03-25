@@ -164,9 +164,10 @@ body:hover .cursor-follower { opacity: 0.4; }
 
 .nav.scrolled {
   padding: 16px 48px;
-  background: rgba(8,36,18,0.92);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: rgba(8,36,18,0.97);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.15);
 }
 
 .nav-inner {
@@ -178,9 +179,10 @@ body:hover .cursor-follower { opacity: 0.4; }
 }
 
 .nav-logo-img {
-  height: 28px;
+  height: 32px;
   width: auto;
   transition: opacity 0.3s;
+  filter: drop-shadow(0 1px 3px rgba(0,0,0,0.3));
 }
 
 .nav-links {
@@ -1528,7 +1530,7 @@ body:hover .cursor-follower { opacity: 0.4; }
 }
 
 .footer-logo {
-  height: 24px;
+  height: 30px;
   width: auto;
   margin-bottom: 24px;
 }
