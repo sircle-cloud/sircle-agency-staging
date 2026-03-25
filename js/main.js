@@ -34,9 +34,27 @@ window.addEventListener('load', () => {
     }, 2000);
   } else {
     // No loader (subpages) — init immediately
-    initAnimations();
+    setTimeout(initAnimations, 100);
   }
 });
+
+// Fallback: if animations haven't fired after 3s, force them
+setTimeout(() => {
+  document.querySelectorAll('.reveal-up').forEach(el => {
+    if (getComputedStyle(el).opacity === '0') {
+      el.style.opacity = '1';
+      el.style.transform = 'translateY(0)';
+      el.style.transition = 'opacity 0.5s, transform 0.5s';
+    }
+  });
+  document.querySelectorAll('.reveal-clip').forEach(el => {
+    if (getComputedStyle(el).opacity === '0') {
+      el.style.opacity = '1';
+      el.style.clipPath = 'inset(0)';
+      el.style.transition = 'opacity 0.5s, clip-path 0.5s';
+    }
+  });
+}, 3500);
 
 // ---- CUSTOM CURSOR ----
 const cursor = document.getElementById('cursor');
