@@ -27,10 +27,15 @@ lenis.on('scroll', ScrollTrigger.update);
 // ---- LOADER ----
 window.addEventListener('load', () => {
   const loader = document.getElementById('loader');
-  setTimeout(() => {
-    loader.classList.add('hidden');
+  if (loader) {
+    setTimeout(() => {
+      loader.classList.add('hidden');
+      initAnimations();
+    }, 2000);
+  } else {
+    // No loader (subpages) — init immediately
     initAnimations();
-  }, 2000);
+  }
 });
 
 // ---- CUSTOM CURSOR ----
