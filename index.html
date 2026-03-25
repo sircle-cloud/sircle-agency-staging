@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sircle.agency — Every brand has a story worth telling</title>
+  <meta name="description" content="Strategy-driven creative agency uit Den Haag. Van merkstrategie tot film, van design tot digitale groei.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kulim+Park:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NOISE SVG FILTER -->
+  <svg style="position:absolute;width:0;height:0">
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+  </svg>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-logo">
+      <img src="assets/svg/svg white S.svg" alt="S" class="loader-icon">
+    </div>
+    <div class="loader-bar"><div class="loader-progress"></div></div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="assets/svg/svg white logo1.svg" alt="sircle agency" class="nav-logo-img">
+      </a>
+      <div class="nav-links">
+        <a href="#diensten">Diensten</a>
+        <a href="#werk">Werk</a>
+        <a href="#over">Over ons</a>
+        <a href="#contact" class="nav-cta">Plan een gesprek</a>
+      </div>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-inner">
+      <a href="#diensten">Diensten</a>
+      <a href="#werk">Werk</a>
+      <a href="#over">Over ons</a>
+      <a href="#contact" class="btn-primary">Plan een gesprek</a>
+    </div>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- SECTION 1: HERO -->
+  <!-- ============================================ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="assets/images/benoit-deschasaux-0tHVrVOJ1qU-unsplash.jpg" alt="" class="hero-bg-img">
+      <div class="hero-overlay"></div>
+      <div class="noise-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title split-text">
+        <span class="line">EVERY BRAND</span>
+        <span class="line">HAS A STORY</span>
+        <span class="line">WORTH TELLING.</span>
+      </h1>
+      <p class="hero-sub">Van merkstrategie tot film, van design tot digitale groei.</p>
+      <a href="#contact" class="btn-primary hero-cta">Plan een gesprek <span class="btn-arrow">→</span></a>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 2: PAIN POINTS -->
+  <!-- ============================================ -->
+  <section class="section section-cream pain-points" id="probleem">
+    <div class="noise-overlay"></div>
+    <div class="container">
+      <div class="section-label reveal-up">Het probleem</div>
+      <h2 class="section-title reveal-up">HERKEN JE DIT?</h2>
+      <div class="pain-grid">
+        <div class="pain-card reveal-up" data-delay="0.1">
+          <div class="pain-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="24" cy="24" r="20"/>
+              <path d="M24 14v10l7 7"/>
+              <circle cx="24" cy="24" r="4"/>
+            </svg>
+          </div>
+          <h3>Je merk voelt niet meer als jij.</h3>
+          <p>Je bent gegroeid, maar je merk is niet meegegroeid. Het verhaal klopt niet meer. Tijd voor helderheid.</p>
+        </div>
+        <div class="pain-card reveal-up" data-delay="0.2">
+          <div class="pain-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="24" cy="24" r="20"/>
+              <path d="M16 32l8-8 8 8M16 24l8-8 8 8"/>
+            </svg>
+          </div>
+          <h3>Je investeert, maar ziet geen groei.</h3>
+          <p>Campagnes, content, ads — maar het voelt als schieten in het donker. Geen richting, geen resultaat.</p>
+        </div>
+        <div class="pain-card reveal-up" data-delay="0.3">
+          <div class="pain-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 36V20l12-8 12 8v16"/>
+              <path d="M20 36V28h8v8"/>
+              <circle cx="24" cy="16" r="3"/>
+            </svg>
+          </div>
+          <h3>Je hebt een verhaal, maar niemand hoort het.</h3>
+          <p>Je weet dat je merk meer is dan wat je nu laat zien. Het is tijd om het te vertellen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 3: INTRO + IDENTITY -->
+  <!-- ============================================ -->
+  <section class="section section-dark intro" id="intro">
+    <div class="noise-overlay"></div>
+    <div class="intro-bg-image">
+      <img src="assets/images/slashio-photography-yaith3Ahrf0-unsplash.jpg" alt="" class="bg-texture">
+    </div>
+    <div class="container">
+      <div class="intro-video reveal-up">
+        <div class="video-container">
+          <img src="assets/images/jordan-gonzalez-RdEYQ2YKalo-unsplash.jpg" alt="Intro video" class="video-poster">
+          <div class="play-button">
+            <svg viewBox="0 0 64 64" fill="none">
+              <circle cx="32" cy="32" r="31" stroke="#F2E2A4" stroke-width="2"/>
+              <polygon points="26,20 44,32 26,44" fill="#F2E2A4"/>
+            </svg>
+            <span>Bekijk onze aanpak</span>
+          </div>
+        </div>
+      </div>
+      <div class="intro-content">
+        <h2 class="intro-brand reveal-up">sircle.agency</h2>
+        <p class="intro-text reveal-up">Wij geloven dat elk merk een verhaal heeft dat het waard is om te vertellen. Als strategy-driven creative agency combineren wij strategie, film, design en technologie om merken te transformeren.</p>
+        <div class="intro-pillars">
+          <div class="pillar reveal-up" data-delay="0.1">
+            <h4>Strategie-gedreven</h4>
+            <p>Alles begint met een heldere richting. Geen pixel zonder plan.</p>
+          </div>
+          <div class="pillar reveal-up" data-delay="0.2">
+            <h4>Filmmaker-DNA</h4>
+            <p>Wij denken in beeld en verhaal. Van concept tot eindproduct.</p>
+          </div>
+          <div class="pillar reveal-up" data-delay="0.3">
+            <h4>Eén team, alles onder één dak</h4>
+            <p>Geen losse freelancers, maar één bureau dat strategie, creatie en groei verbindt.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 4: DIENSTEN / SIRCLE MODEL -->
+  <!-- ============================================ -->
+  <section class="section section-cream diensten" id="diensten">
+    <div class="noise-overlay"></div>
+    <div class="container">
+      <h2 class="section-title reveal-up">ZO WERKEN WIJ</h2>
+      <p class="section-subtitle reveal-up">Het SIRCLE Model: vier fases die samen een cyclus vormen. Van richting bepalen tot langetermijn groei.</p>
+      
+      <!-- SIRCLE MODEL VISUAL (from Figma) -->
+      <div class="sircle-model reveal-up">
+        <img src="assets/figma/sircle-model-lg.png" alt="SIRCLE Model — Strategy, Production, Growth, Care" class="model-image">
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal-up" data-delay="0.1">
+          <span class="service-number">01</span>
+          <h3>Strategy</h3>
+          <ul>
+            <li>Brand strategy & positionering</li>
+            <li>Merkonderzoek & analyse</li>
+            <li>Content strategie</li>
+            <li>Doelgroepbepaling</li>
+          </ul>
+        </div>
+        <div class="service-card reveal-up" data-delay="0.2">
+          <span class="service-number">02</span>
+          <h3>Production</h3>
+          <ul>
+            <li>Branding & visual identity</li>
+            <li>Film & video productie</li>
+            <li>Website design & development</li>
+            <li>Grafisch design</li>
+          </ul>
+        </div>
+        <div class="service-card reveal-up" data-delay="0.15">
+          <span class="service-number">03</span>
+          <h3>Growth</h3>
+          <ul>
+            <li>SEO & organische groei</li>
+            <li>Google Ads & paid media</li>
+            <li>Social media strategie</li>
+            <li>Content marketing</li>
+          </ul>
+        </div>
+        <div class="service-card reveal-up" data-delay="0.25">
+          <span class="service-number">04</span>
+          <h3>Care</h3>
+          <ul>
+            <li>Hosting & onderhoud</li>
+            <li>Security & updates</li>
+            <li>Performance monitoring</li>
+            <li>Doorontwikkeling & support</li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center reveal-up">
+        <a href="#" class="btn-ghost">Bekijk al onze diensten <span>→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 5: CASES -->
+  <!-- ============================================ -->
+  <section class="section section-dark cases" id="werk">
+    <div class="noise-overlay"></div>
+    <div class="container-wide">
+      <div class="section-header">
+        <div class="section-label reveal-up">Portfolio</div>
+        <h2 class="section-title reveal-up">GESELECTEERD WERK</h2>
+      </div>
+      <div class="cases-grid">
+        <div class="case-card case-large reveal-clip" data-delay="0.1">
+          <div class="case-image">
+            <img src="assets/images/dario-bronnimann-y51ZjAmV3_k-unsplash.jpg" alt="World Skate Center">
+            <div class="case-overlay"></div>
+          </div>
+          <div class="case-info">
+            <h3>World Skate Center</h3>
+            <span class="case-tags">Brand Film · Strategy · Production</span>
+          </div>
+        </div>
+        <div class="case-card case-medium reveal-clip" data-delay="0.2">
+          <div class="case-image">
+            <img src="assets/images/ryunosuke-kikuno-DNKKdn1Q8Dw-unsplash.jpg" alt="VLIJT Tandartsen">
+            <div class="case-overlay"></div>
+          </div>
+          <div class="case-info">
+            <h3>VLIJT Tandartsen</h3>
+            <span class="case-tags">Web · SEO · Growth</span>
+          </div>
+        </div>
+        <div class="case-card case-medium reveal-clip" data-delay="0.3">
+          <div class="case-image">
+            <img src="assets/images/planet-volumes-AScLcUpWWVs-unsplash.jpg" alt="Type Design">
+            <div class="case-overlay"></div>
+          </div>
+          <div class="case-info">
+            <h3>Type Design</h3>
+            <span class="case-tags">Video Course · Production</span>
+          </div>
+        </div>
+        <div class="case-card case-large reveal-clip" data-delay="0.4">
+          <div class="case-image">
+            <img src="assets/images/mikita-yo-UgWWJ0fIBGE-unsplash.jpg" alt="New Long">
+            <div class="case-overlay"></div>
+          </div>
+          <div class="case-info">
+            <h3>New Long</h3>
+            <span class="case-tags">Branding · Visual Identity</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- LOGO MARQUEE -->
+      <div class="marquee reveal-up">
+        <div class="marquee-track">
+          <span class="marquee-item">VLIJT</span>
+          <span class="marquee-dot">·</span>
+          <span class="marquee-item">Redbull</span>
+          <span class="marquee-dot">·</span>
+          <span class="marquee-item">iLOQ</span>
+          <span class="marquee-dot">·</span>
+          <span class="marquee-item">Dudok</span>
+          <span class="marquee-dot">·</span>
+          <span class="marquee-item">World Skate Center</span>
+          <span class="marquee-dot">·</span>
+          <span class="marquee-item">KONE</span>
+          <span class="marquee-dot">·</span>
+          <span class="marquee-item">Another Label</span>
+          <span class="marquee-dot">·</span>
+          <span class="marquee-item">VLIJT</span>
+          <span class="marquee-dot">·</span>
+          <span class="marquee-item">Redbull</span>
+          <span class="marquee-dot">·</span>
+          <span class="marquee-item">iLOQ</span>
+          <span class="marquee-dot">·</span>
+          <span class="marquee-item">Dudok</span>
+          <span class="marquee-dot">·</span>
+          <span class="marquee-item">World Skate Center</span>
+          <span class="marquee-dot">·</span>
+          <span class="marquee-item">KONE</span>
+          <span class="marquee-dot">·</span>
+          <span class="marquee-item">Another Label</span>
+          <span class="marquee-dot">·</span>
+        </div>
+      </div>
+
+      <div class="text-center reveal-up" style="margin-top:48px">
+        <a href="#" class="btn-ghost">Bekijk alle cases <span>→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 6: QUOTE -->
+  <!-- ============================================ -->
+  <section class="section quote-section" id="quote">
+    <div class="quote-bg">
+      <img src="assets/images/getty-images-Uu2HHyUpzrI-unsplash.jpg" alt="" class="bg-texture">
+      <div class="quote-gradient"></div>
+      <div class="noise-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="quote-content">
+        <div class="quote-line reveal-up"></div>
+        <blockquote class="quote-text reveal-up">
+          WIJ VERTELLEN HET VERHAAL<br>VAN JOUW MERK.
+        </blockquote>
+        <div class="quote-line reveal-up"></div>
+        <cite class="quote-cite reveal-up">— sircle.agency</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 7: OVER ONS -->
+  <!-- ============================================ -->
+  <section class="section section-cream about" id="over">
+    <div class="noise-overlay"></div>
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image reveal-clip">
+          <img src="assets/images/mohamed-nohassi-nJB_Fgxx-pI-unsplash.jpg" alt="Sebas Vreeken">
+          <div class="about-image-tint"></div>
+        </div>
+        <div class="about-content">
+          <div class="section-label reveal-up">De guide</div>
+          <h2 class="section-title reveal-up">OVER SIRCLE.AGENCY</h2>
+          <p class="reveal-up">Ik ben Sebas Vreeken — filmmaker, strateeg en founder van sircle.agency. Met een achtergrond in film en een obsessie voor heldere merkstrategie help ik bedrijven hun verhaal vinden en vertellen.</p>
+          <p class="reveal-up">sircle.agency is bewust klein. Geen lagen, geen accountmanagers — je werkt direct met mij en een select netwerk van specialisten. Zo houden we de kwaliteit hoog en de lijnen kort.</p>
+          <div class="about-badges reveal-up">
+            <span class="badge">🎬 Filmmaker & Creative Director</span>
+            <span class="badge">📐 Strateeg & Merkdenker</span>
+            <span class="badge">🚀 AI-native werkwijze</span>
+          </div>
+          <a href="#" class="btn-ghost reveal-up">Meer over ons <span>→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 8: TESTIMONIALS -->
+  <!-- ============================================ -->
+  <section class="section section-dark testimonials" id="reviews">
+    <div class="noise-overlay"></div>
+    <div class="container-narrow">
+      <div class="section-label reveal-up">Social proof</div>
+      <h2 class="section-title reveal-up">WAT KLANTEN ZEGGEN</h2>
+      <div class="testimonial-carousel">
+        <div class="testimonial active" data-slide="0">
+          <div class="stars">★★★★★</div>
+          <blockquote>"sircle.agency heeft ons merk compleet getransformeerd. Van strategie tot de uiteindelijke website — alles klopt."</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar"></div>
+            <div>
+              <strong>Mark de Vries</strong>
+              <span>CEO, TechVentures</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial" data-slide="1">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Sebas denkt mee als strateeg, niet alleen als uitvoerder. Dat maakt het verschil."</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar"></div>
+            <div>
+              <strong>Laura Jansen</strong>
+              <span>Marketing Director, GreenWorks</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial" data-slide="2">
+          <div class="stars">★★★★★</div>
+          <blockquote>"De combinatie van film en merkstrategie is uniek. Nergens anders gevonden."</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar"></div>
+            <div>
+              <strong>Thomas Bakker</strong>
+              <span>Founder, Coastal Brands</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-dots">
+        <button class="dot active" data-slide="0"></button>
+        <button class="dot" data-slide="1"></button>
+        <button class="dot" data-slide="2"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 9: LEAD MAGNET -->
+  <!-- ============================================ -->
+  <section class="section lead-magnet" id="framework">
+    <div class="noise-overlay"></div>
+    <div class="container">
+      <div class="lead-grid">
+        <div class="lead-mockup reveal-up">
+          <div class="mockup-wrapper">
+            <img src="assets/images/v1.1.png" alt="SIRCLE Brand Framework" class="mockup-img">
+          </div>
+        </div>
+        <div class="lead-content">
+          <div class="section-label reveal-up">Gratis resource</div>
+          <h2 class="section-title section-title--dark reveal-up">HET SIRCLE BRAND FRAMEWORK</h2>
+          <p class="reveal-up">Ontdek in 5 stappen of jouw merk klaar is voor groei. Van positionering tot digitale strategie — ons framework helpt je helderheid te krijgen over waar je staat.</p>
+          <form class="lead-form reveal-up">
+            <input type="email" placeholder="je@email.com" class="lead-input" required>
+            <button type="submit" class="btn-primary">Download gratis <span class="btn-arrow">→</span></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 10: SIRCLE MODEL SCROLL NARRATIVE -->
+  <!-- ============================================ -->
+  <section class="section section-dark model-narrative" id="model">
+    <div class="noise-overlay"></div>
+    <div class="model-phases">
+      <div class="model-phase" data-phase="strategy">
+        <div class="phase-bg">
+          <img src="assets/images/dario-bronnimann-y51ZjAmV3_k-unsplash.jpg" alt="" class="bg-texture">
+        </div>
+        <div class="container">
+          <div class="phase-content">
+            <span class="phase-number">01</span>
+            <h3>STRATEGY</h3>
+            <p>Alles begint met richting. Wij onderzoeken je merk, markt en doelgroep om een strategie te bouwen die klopt.</p>
+          </div>
+        </div>
+      </div>
+      <div class="model-phase" data-phase="production">
+        <div class="phase-bg">
+          <img src="assets/images/daniel-mirlea-eQzLUXisfgA-unsplash.jpg" alt="" class="bg-texture">
+        </div>
+        <div class="container">
+          <div class="phase-content">
+            <span class="phase-number">02</span>
+            <h3>PRODUCTION</h3>
+            <p>Van merkidentiteit tot film, van website tot campagnebeeld — wij maken het zichtbaar.</p>
+          </div>
+        </div>
+      </div>
+      <div class="model-phase" data-phase="growth">
+        <div class="phase-bg">
+          <img src="assets/images/getty-images-Uu2HHyUpzrI-unsplash.jpg" alt="" class="bg-texture">
+        </div>
+        <div class="container">
+          <div class="phase-content">
+            <span class="phase-number">03</span>
+            <h3>GROWTH</h3>
+            <p>SEO, ads, social media en content marketing. Wij zorgen dat je gevonden wordt.</p>
+          </div>
+        </div>
+      </div>
+      <div class="model-phase" data-phase="care">
+        <div class="phase-bg">
+          <img src="assets/images/ohlamour-studio-SxvXxLA65Ig-unsplash.jpg" alt="" class="bg-texture">
+        </div>
+        <div class="container">
+          <div class="phase-content">
+            <span class="phase-number">04</span>
+            <h3>CARE</h3>
+            <p>Onderhoud, doorontwikkeling en monitoring. Wij blijven betrokken na de lancering.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 11: FINAL CTA -->
+  <!-- ============================================ -->
+  <section class="section section-dark final-cta" id="contact">
+    <div class="cta-bg">
+      <img src="assets/images/soham-banerjee-5sJfsX2D3mM-unsplash.jpg" alt="" class="bg-texture">
+      <div class="noise-overlay"></div>
+    </div>
+    <div class="grain-overlay"></div>
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title reveal-up">KLAAR OM JOUW<br>VERHAAL TE VERTELLEN?</h2>
+        <p class="cta-sub reveal-up">Plan een vrijblijvend gesprek. We luisteren eerst, en komen dan met een helder voorstel.</p>
+        <div class="cta-buttons reveal-up">
+          <a href="#" class="btn-primary btn-large">Plan een gesprek <span class="btn-arrow">→</span></a>
+          <a href="tel:+31852129145" class="btn-secondary">📞 Bel direct: +31 85 212 91 45</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 12: FOOTER -->
+  <!-- ============================================ -->
+  <footer class="footer">
+    <div class="noise-overlay"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <img src="assets/svg/svg white logo1.svg" alt="sircle agency" class="footer-logo">
+          <address>
+            Zwaardstraat 16<br>
+            2584 TX Den Haag
+          </address>
+          <div class="footer-contact">
+            <a href="mailto:hello@sircle.agency">hello@sircle.agency</a>
+            <a href="tel:+31852129145">+31 85 212 91 45</a>
+          </div>
+          <div class="footer-socials">
+            <a href="#" aria-label="LinkedIn">Li</a>
+            <a href="#" aria-label="Instagram">Ig</a>
+            <a href="#" aria-label="YouTube">Yt</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <p class="footer-tagline">"Every brand has a story worth telling."</p>
+          <div class="footer-divider"></div>
+          <h4>Diensten</h4>
+          <nav>
+            <a href="#">Strategy</a>
+            <a href="#">Production</a>
+            <a href="#">Growth</a>
+            <a href="#">Care</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4>Pagina's</h4>
+          <nav>
+            <a href="#werk">Werk</a>
+            <a href="#over">Over ons</a>
+            <a href="#contact">Contact</a>
+            <a href="#">Journal</a>
+          </nav>
+          <div class="footer-divider"></div>
+          <a href="https://sircle.dev" class="footer-external" target="_blank">sircle.dev ↗</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 sircle.agency · Privacybeleid</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
